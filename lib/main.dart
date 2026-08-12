@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'flavor_config.dart';
 
-void main() {
+void mainCommon() {
   runApp(const MyApp());
 }
 
@@ -12,12 +13,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Selena App',
+      title: FlavorConfig.instance.appTitle,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Daily Quote & Counter'),
+      home: MyHomePage(title: FlavorConfig.instance.appTitle),
     );
   }
 }

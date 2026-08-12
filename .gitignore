@@ -1,3 +1,9 @@
+# Flavor specific entry points you want to keep private
+/lib/main_prod.dart
+
+# Internal agent/IDE artifacts and plans
+/.artifacts/
+
 # Miscellaneous
 *.class
 *.log
@@ -47,6 +53,7 @@ app.*.map.json
 /android/app/release
 /android/local.properties
 /android/key.properties
+*.jks
 *.keystore
 
 # Environment / Secret keys
